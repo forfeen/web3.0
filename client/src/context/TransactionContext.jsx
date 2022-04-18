@@ -44,7 +44,7 @@ export const TransactionsProvider = ({ children }) => {
             ).toLocaleString(),
             message: transaction.message,
             keyword: transaction.keyword,
-            amount: parseInt(transaction.amount._hex) / 10 ** 18,
+            amount: parseInt(transaction.amount._hex) / (10 ** 18),
           })
         );
 
