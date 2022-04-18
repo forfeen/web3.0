@@ -99,7 +99,7 @@ export const TransactionsProvider = ({ children }) => {
       if (!ethereum) return alert("Please install MetaMask.");
 
       const accounts = await ethereum.request({
-        method: "eth_requestAccounts",
+        method: "eth_requestAccounts"
       });
       setCurrentAccount(accounts[0]);
       window.location.reload();
